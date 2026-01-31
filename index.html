@@ -6,65 +6,66 @@
     <title>Free Fire</title>
     <link rel="icon" type = "Image/png" href = "Logo.png">
     <link href="output.css" rel ="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         @keyframes colorChange{
             0% {color:red;}
-            33% {color:green;}
-            66% {color:blue;}
-            100% {color:red;}
+            33% {color:rgb(26, 240, 26);}
+            66% {color:rgb(208, 30, 101);}
+            100% {color:rgb(235, 110, 8);}
         }
         #slider-container {
             transition: transform 0.7s cubic-bezier(0.4,0,0.2,1);
         }
-         @keyframes slide {
-      0%   { transform: translateX(0%); }
-      33%  { transform: translateX(0%); }
-
-      38%  { transform: translateX(-100%); }
-      66%  { transform: translateX(-100%); }
-
-      71%  { transform: translateX(-200%); }
-      100% { transform: translateX(-200%); }
-    }
-
-    .animate-slide {
-      animation: slide 9s infinite;
-    }
-          
     </style>
 </head>
 <body class ="bg-slate-900 place-content-center text-amber-50 justify-center items-center">
        <!-- Nav-bar starts here -->
-    <nav class="w-full h-10 sm:h-12 md:h-15 bg-indigo-950 flex flex-row rounded-2xl fixed text-indigo-800 items-center text-2xl justify-between animate-[colorChange_3s_infinite] z-100 ">
+    <nav class="w-full h-10 sm:h-12 md:h-15 bg-indigo-950 flex flex-row rounded-2xl fixed text-indigo-800 items-center text-2xl justify-between animate-[colorChange_0.6s_infinite] z-100 ">
         <div><a href="https://www.garena.sg/" target="_blank" ><img class="h-10 sm:h-12 md:h-15 ml-1 sm:ml-2.5 md:ml-5 "  src="Logo.png" alt="Logo"></a></div>
         <div class="hidden md:block"><a href="index.html" target="_blank"><button>HOME</button></a></div>
         <div class="hidden md:block"><a><button>CHARACTERS</button></a></div>
         <div class="hidden md:block"><a><button>SHOP</button></a></div>
         <div class="hidden mr-10 md:block"><a><button>WEAPONS</button></a></div>
+        <div class="block md:hidden justify-center items-center space-x-4">
+            <i class="fa-solid fa-house"></i>
+            <i class="fa-solid fa-cart-arrow-down"></i>
+        </div>
+        
+
     </nav>
     <!-- NAV-BAR ENDS HERE. -->
     <section class="mt-20">
         <!-- Characters starts here -->
-        <div class="relative w-full max-w-4xl mx-auto overflow-hidden rounded-xl shadow-2xl bg-white hover:cursor-pointerd">
+        <div class="relative w-full max-w-4xl mx-auto overflow-hidden rounded-xl shadow-2xl bg-white hover:cursor-pointerd text-orange-700">
         <div id="slider-container" class="flex  transition-transform duration-500 hover:scale-105">
-            <div class="min-w-full h-64 md:h-96">
+            <div class="min-w-full relative h-64 md:h-96">
                 <img src="Alok.jpg" class="w-full h-full object-cover" alt="DJ Alok">
+                <div class="absolute top-5 right-5 md:right-10 text-2xl md:text-4xl  text-orange-500 ">DJ ALOK</div>
             </div>
-            <div class="min-w-full h-64 md:h-96">
+            <div class="min-w-full relative h-64 md:h-96">
                 <img src="K.webp" class="w-full h-full object-cover" alt="K">
+                <div class="absolute top-5 right-5 md:right-10 text-2xl md:text-4xl  text-orange-500 ">K</div>
             </div>
-            <div class="min-w-full h-64 md:h-96">
+            <div class="min-w-full relative h-64 md:h-96">
                 <img src="Hayato.jpg" class="w-full h-full object-cover" alt="Hayato">
+                <div class="absolute top-5 right-5 md:right-10 text-2xl md:text-4xl  text-orange-500 ">HAYATO</div>
             </div>
-            <div class="min-w-full h-64 md:h-96">
+            <div class="min-w-full relative h-64 md:h-96">
                 <img src="Kelly.jpg" class="w-full h-full object-cover" alt="Kelly">
+                <div class="absolute top-5 right-5 md:right-10 text-2xl md:text-4xl  text-orange-500 ">KELLY</div>
             </div>
-            <div class="min-w-full h-64 md:h-96">
+            <div class="min-w-full relative h-64 md:h-96">
                 <img src="Moco.jpg" class="w-full h-full object-cover" alt="Moco">
-            </div><div class="min-w-full h-64 md:h-96">
+                <div class="absolute top-5 right-5 md:right-10 text-2xl md:text-4xl  text-orange-500 ">MOCO</div>
+            </div>
+            <div class="min-w-full relative h-64 md:h-96">
                 <img src="Maxim.jpg" class="w-full h-full object-cover" alt="Maxim">
-            </div><div class="min-w-full h-64 md:h-96">
+                <div class="absolute top-5 right-5 md:right-10 text-2xl md:text-4xl  text-orange-500 ">MAXIM</div>
+            </div>
+            <div class="min-w-full relative h-64 md:h-96">
                 <img src="Andrew.jpg" class="w-full h-full object-cover" alt="Andrew">
+                <div class="absolute top-5 right-5 md:right-10 text-2xl md:text-4xl  text-orange-500 ">ANDREW</div>
             </div> 
         </div>
         <div class="absolute bottom-5 left-5 text-white drop-shadow-lg">
@@ -96,21 +97,12 @@
     <div class="flex flex-col lg:flex-row flex-warp content-center justify-center   gap-7 ">
         <div class="flex flex-col h-50 justify-center items-center">
             <img class="w-fit h-50 object-cover " src="News-1.jpg">
-            <div>
-                <p></p>
-            </div>
         </div>
-        <div class="flex flex-col h-50 justify-center items-center">
+        <div class="flex flex-col h-50 width-[330]px justify-center items-center">
             <img class="w-fit h-50 object-cover " src="News-2.jpeg">
-            <div>
-                <p></p>
-            </div>
         </div>
         <div class="flex flex-col h-50 justify-center items-center">
             <img class="w-fit h-50 object-cover" src="News-3.jpeg">
-            <div>
-                <p></p>
-            </div>
         </div>
     </div> 
     <!-- Special event starts here  -->
@@ -119,14 +111,20 @@
     </div>
     <!-- Special events ends here -->
     <!-- Footer file starts here  -->
-    <div class="text-2xl">
-        <h1>ESPORTS</h1>
-        <p>Free Fire World Series </p>
-        <p>Free Fire's most iconic offline tournament - Free Fire World Series (FFWS in short) is a global tournament held by Garena. It is an epic battle of the best teams in the world, a carnival for all Free Fire players.</p>      
+    <div class="flex flex-col mt-8 leading-tight space-y-0.5 justify-center items-center">
+        <h1 class="text-xl md:text-3xl pb-5 text-amber-600">ESPORTS</h1>
+        <pre class="text-[16px] md:text-xl text-green-500">
+                    Free Fire World Series
+          Free Fire's most iconic offline tournament 
+          Free Fire World Series (FFWS in short) is a  
+         global tournament held by Garena. It is an epic  
+        battle of the best teams in the world, a carnival 
+                  for all Free Fire players.
+        </pre>              
     </div> 
-    <div class="flex flex-col ">
-        <div>Logo</div>
-        <div>
+    <div class="flex flex-col justify-center items-center ">
+        <div><img src="garena_logo_v.svg"></div>
+        <div class="pr-30 text-pink-200">
             <pre>
                 Establish in 2009, Garena is a
                      leading online games
@@ -137,12 +135,12 @@
         </div>
     </div>
     <!-- Ending part -->
-    <div class="flex flex-row flex-wrap">
-        <div>Terms of Service</div>
-        <div>Privacy Policy</div>
-        <div>For Parents FAQ</div>
+    <div class="flex flex-row flex-wrap text-2xl justify-center items-center space-x-4 text-blue-400 mb-8">
+        <div>Terms of Service</div>|
+        <div class="ml-5">Privacy Policy</div> |
+        <div class="ml-5">For Parents FAQ</div>
     </div> 
-    <div>
+    <div class="flex flex-col justify-center items-center space-y-1 bg-gray-950 text-green-400">
         <div>Copyright &copy; Garena Online</div>
         <div>Trademarks belong to their respective owners. All rights reserved.</div>
         <div>PRASAD PATRA (125CS0101) NIT ROURKELA...</div>
@@ -152,16 +150,13 @@
         const container = document.getElementById('slider-container');
         const slides = container.children;
         let index = 0;
-
         function startSliding() {
             setInterval(() => {
                 index++;
-                
                 // Reset to first slide if at the end
                 if (index >= slides.length) {
                     index = 0;
                 }
-                
                 // Move the container
                 container.style.transform = `translateX(-${index * 100}%)`;
             }, 3000); // Change every 3 seconds
@@ -170,7 +165,6 @@
         // Initialize slider
         startSliding();
     </script>
-
 </body>
 </html>
     
