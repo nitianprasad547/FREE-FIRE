@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Fire</title>
+    <link rel="icon" type = "Image/png" href = "Logo.png">
+    <link href="output.css" rel ="stylesheet">
+    <style>
+        @keyframes colorChange{
+            0% {color:red;}
+            33% {color:green;}
+            66% {color:blue;}
+            100% {color:red;}
+        }
+        #slider-container {
+            transition: transform 0.7s cubic-bezier(0.4,0,0.2,1);
+        }
+         @keyframes slide {
+      0%   { transform: translateX(0%); }
+      33%  { transform: translateX(0%); }
+
+      38%  { transform: translateX(-100%); }
+      66%  { transform: translateX(-100%); }
+
+      71%  { transform: translateX(-200%); }
+      100% { transform: translateX(-200%); }
+    }
+
+    .animate-slide {
+      animation: slide 9s infinite;
+    }
+          
+    </style>
+</head>
+<body class ="bg-slate-900 place-content-center text-amber-50 justify-center items-center">
+       <!-- Nav-bar starts here -->
+    <nav class="w-full h-10 sm:h-12 md:h-15 bg-indigo-950 flex flex-row rounded-2xl fixed text-indigo-800 items-center text-2xl justify-between animate-[colorChange_3s_infinite] z-100 ">
+        <div><a href="https://www.garena.sg/" target="_blank" ><img class="h-10 sm:h-12 md:h-15 ml-1 sm:ml-2.5 md:ml-5 "  src="Logo.png" alt="Logo"></a></div>
+        <div class="hidden md:block"><a href="index.html" target="_blank"><button>HOME</button></a></div>
+        <div class="hidden md:block"><a><button>CHARACTERS</button></a></div>
+        <div class="hidden md:block"><a><button>SHOP</button></a></div>
+        <div class="hidden md:block"><a><button>WEAPONS</button></a></div>
+    </nav>
+    <!-- NAV-BAR ENDS HERE. -->
+    <section class="mt-20">
+        <!-- Characters starts here -->
+        <div class="relative w-full max-w-4xl mx-auto overflow-hidden rounded-xl shadow-2xl bg-white hover:cursor-pointer">
+        <div id="slider-container" class="flex  transition-transform duration-500 hover:scale-105">
+            <div class="min-w-full h-64 md:h-96">
+                <img src="Alok.jpg" class="w-full h-full object-cover" alt="DJ Alok">
+            </div>
+            <div class="min-w-full h-64 md:h-96">
+                <img src="K.webp" class="w-full h-full object-cover" alt="K">
+            </div>
+            <div class="min-w-full h-64 md:h-96">
+                <img src="Hayato.jpg" class="w-full h-full object-cover" alt="Hayato">
+            </div>
+            <div class="min-w-full h-64 md:h-96">
+                <img src="Kelly.jpg" class="w-full h-full object-cover" alt="Kelly">
+            </div>
+            <div class="min-w-full h-64 md:h-96">
+                <img src="Moco.jpg" class="w-full h-full object-cover" alt="Moco">
+            </div><div class="min-w-full h-64 md:h-96">
+                <img src="Maxim.jpg" class="w-full h-full object-cover" alt="Maxim">
+            </div><div class="min-w-full h-64 md:h-96">
+                <img src="Andrew.jpg" class="w-full h-full object-cover" alt="Andrew">
+            </div> 
+        </div>
+        <div class="absolute bottom-5 left-5 text-white drop-shadow-lg">
+            <h2 class="text-2xl font-bold">CHARACTERS</h2>
+            <p class="text-sm opacity-90">Heros of Free Fire</p>
+        </div>
+    </div>
+    <!-- Character ends here -->
+    <!-- Weapon Collection Starts here -->
+    <div class="flex overflow-x-auto snap-x snap-mandatory scroll-smooth no-scroolbar gap-6 p-10 bg-transparent">
+        <div class="relative shrink-0 w-80 h-48 bg-blue-600 rounded-2xl flex items-center justify-center text-white text-2xl font-bold shadow-xl hover:scale-103">
+            <img class="w-80 h-48 rounded-3xl" src="AK.jpg">
+        </div>
+        <div class="relative shrink-0 w-80 h-48 bg-blue-600 rounded-2xl flex items-center justify-center text-white text-2xl font-bold shadow-xl hover:scale-103">
+            <img class="w-80 h-48 rounded-3xl" src="P90.jpg">
+        </div><div class="relative shrink-0 w-80 h-48 bg-blue-600 rounded-2xl flex items-center justify-center text-white text-2xl font-bold shadow-xl hover:scale-103">
+            <img class="w-80 h-48 rounded-3xl" src="MT5.jpg">
+        </div><div class="relative shrink-0 w-80 h-48 bg-blue-600 rounded-2xl flex items-center justify-center text-white text-2xl font-bold shadow-xl hover:scale-103">
+            <img class="w-80 h-48 rounded-3xl" src="Groza.jpg">
+        </div><div class="relative shrink-0 w-80 h-48 bg-blue-600 rounded-2xl flex items-center justify-center text-white text-2xl font-bold shadow-xl hover:scale-103">
+            <img class="w-80 h-48 rounded-3xl" src="Scar.jpg">
+        </div><div class="relative shrink-0 w-80 h-48 bg-blue-600 rounded-2xl flex items-center justify-center text-white text-2xl font-bold shadow-xl hover:scale-103">
+            <img class="w-80 h-48 rounded-3xl" src="MP40.jpg">
+        </div><div class="relative shrink-0 w-80 h-48 bg-blue-600 rounded-2xl flex items-center justify-center text-white text-2xl font-bold shadow-xl hover:scale-103">
+            <img class="w-80 h-48 rounded-3xl" src="XM8.jpg">
+        </div>   
+    </div>
+     <div>
+        <div>AK</div>
+        <div>P90</div>
+        <div>MT5</div>
+        <div>Groza</div>
+        <div>Scar</div>
+        <div>MP40</div>
+        <div>XM8</div>
+     </div>
+     <!-- Latest News starts here -->
+    <div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div> 
+    <!-- Special event starts here  -->
+    <div>
+        <img>
+    </div>
+    <!-- Special events ends here -->
+    <!-- Footer file starts here  -->
+    <div>
+        <h1>ESPORTS</h1>
+        <p>Free Fire World Series </p>
+        <p>Free Fire's most iconic offline tournament - Free Fire World Series (FFWS in short) is a global tournament held by Garena. It is an epic battle of the best teams in the world, a carnival for all Free Fire players.</p>      
+    </div> 
+    <div class="flex flex-col ">
+        <div>Logo</div>
+        <div>
+            <pre>
+                Establish in 2009, Garena is a
+                     leading online games
+                developer and publisher with a
+                 global footprint across more
+                       than 160 markts.   
+            </pre>
+        </div>
+    </div>
+    <!-- Ending part -->
+    <div class="flex flex-row flex-wrap">
+        <div>Terms of Service</div>
+        <div>Privacy Policy</div>
+        <div>For Parents FAQ</div>
+    </div> 
+    <div>
+        <div>Copyright &copy; Garena Online</div>
+        <div>Trademarks belong to their respective owners. All rights reserved.</div>
+        <div>PRASAD PATRA (125CS0101) NIT ROURKELA...</div>
+    </div>  
+    </section>
+    <script>
+        const container = document.getElementById('slider-container');
+        const slides = container.children;
+        let index = 0;
+
+        function startSliding() {
+            setInterval(() => {
+                index++;
+                
+                // Reset to first slide if at the end
+                if (index >= slides.length) {
+                    index = 0;
+                }
+                
+                // Move the container
+                container.style.transform = `translateX(-${index * 100}%)`;
+            }, 3000); // Change every 3 seconds
+        }
+
+        // Initialize slider
+        startSliding();
+    </script>
+
+</body>
+</html>
+    
+    
