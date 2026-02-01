@@ -462,6 +462,9 @@
   .p-10 {
     padding: calc(var(--spacing) * 10);
   }
+  .pt-15 {
+    padding-top: calc(var(--spacing) * 15);
+  }
   .pr-30 {
     padding-right: calc(var(--spacing) * 30);
   }
@@ -627,6 +630,11 @@
   .sm\:w-100 {
     @media (width >= 40rem) {
       width: calc(var(--spacing) * 100);
+    }
+  }
+  .sm\:pt-20 {
+    @media (width >= 40rem) {
+      padding-top: calc(var(--spacing) * 20);
     }
   }
   .sm\:text-2xl {
