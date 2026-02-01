@@ -11,6 +11,7 @@
     --color-orange-500: oklch(70.5% 0.213 47.604);
     --color-orange-700: oklch(55.3% 0.195 38.402);
     --color-amber-50: oklch(98.7% 0.022 95.277);
+    --color-amber-100: oklch(96.2% 0.059 95.617);
     --color-amber-600: oklch(66.6% 0.179 58.318);
     --color-amber-800: oklch(47.3% 0.137 46.201);
     --color-green-400: oklch(79.2% 0.209 151.711);
@@ -402,6 +403,13 @@
       margin-inline-end: calc(calc(var(--spacing) * 10) * calc(1 - var(--tw-space-x-reverse)));
     }
   }
+  .space-x-16 {
+    :where(& > :not(:last-child)) {
+      --tw-space-x-reverse: 0;
+      margin-inline-start: calc(calc(var(--spacing) * 16) * var(--tw-space-x-reverse));
+      margin-inline-end: calc(calc(var(--spacing) * 16) * calc(1 - var(--tw-space-x-reverse)));
+    }
+  }
   .space-x-20 {
     :where(& > :not(:last-child)) {
       --tw-space-x-reverse: 0;
@@ -414,6 +422,9 @@
   }
   .overflow-x-auto {
     overflow-x: auto;
+  }
+  .overflow-x-hidden {
+    overflow-x: hidden;
   }
   .scroll-smooth {
     scroll-behavior: smooth;
@@ -485,6 +496,9 @@
   }
   .text-amber-50 {
     color: var(--color-amber-50);
+  }
+  .text-amber-100 {
+    color: var(--color-amber-100);
   }
   .text-amber-600 {
     color: var(--color-amber-600);
